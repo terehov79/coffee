@@ -1,0 +1,36 @@
+header.header--wrap
+  .container
+    .header
+      ._logo
+        ._burger
+          +icon("burger")
+        a(href="#")
+          img(src='./static/img/general/logotype.png')
+      ._menu
+        .menu-logo
+          a(href="#")
+            img(src='./static/img/general/logotype.png')
+          .close
+            span
+        include menu
+        .menu-icons
+          a(href="#")
+            +icon("shop")
+          a(href="#")
+            +icon("account")
+        .menu-socials
+          ._email
+            a(href="mailto:vlad@htmlbook.ru")
+              | Import@kldrefine.com
+          ._buttons
+            a(href="tel:067350000")
+              img(src='./static/img/content/phone.png')
+            a(href="tel:067350000")
+              img(src='./static/img/content/instagram.png')
+      ._icons
+        a(href="#")
+          +icon("search")
+        a(href="#")
+          +icon("shop")
+        a(href="/")
+          +icon("account")

@@ -1,0 +1,241 @@
+.welcome--wrap
+  
+  .welcome
+    .container
+      .welcome__hero
+        h1
+          | Свежеобжаренный кофе
+        p.title_p
+          | Кофе Калининградской обжарки из разных стран
+          br
+          | произрастания с доставкой на дом. 
+        p.title_p
+          | Мы обжариваем кофе
+          b каждые выходные.
+        ._btn
+          button(type='button', name='catalog').btn_catalog
+            | Посмотреть каталог
+  
+  .catalog
+    .container
+      h2.title_h2
+        | Каталоги нашей продукции
+      .row 
+        .col-xl-3.col-sm-6
+          .card
+            ._block
+              ._pic
+                img(src='./static/img/content/cat_coffe.png')
+              p
+                | Свежеобжаренный кофе
+            ._btn
+              button(type='button', name='catalog').btn_buy
+                | Купить
+        .col-xl-3.col-sm-6
+          .card
+            ._block
+              ._pic
+                img(src='./static/img/content/cat_tea.png')
+              p
+                | Чай и кофейные напитки
+            ._btn
+              button(type='button', name='catalog').btn_buy
+                | Купить
+        .col-xl-3.col-sm-6
+          .card
+            ._block
+              ._pic
+                img(src='./static/img/content/cat_vending.png')
+              p
+                | Продукция для вендинга
+            ._btn
+              button(type='button', name='catalog').btn_buy
+                | Купить
+        .col-xl-3.col-sm-6
+          .card
+            ._block
+              ._pic
+                img(src='./static/img/content/cat_food.png')
+              p
+                | Здоровое питание
+            ._btn
+              button(type='button', name='buy').btn_buy
+                | Купить
+    
+  .products
+    .container
+      h2
+        | Товары со скидкой
+      p.title_p
+        | Наша компания предлагает покупать товар со скидкой не только в дни распродаж
+        br
+        | или в течение действия ограниченных предложений, но и пользоваться скидками постоянно!
+      
+      .slider
+        .swiper-container
+          .swiper-wrapper
+            - for (var i=0; i<10; i++)
+              .swiper-slide
+                .slide
+                  .card
+                    +select(['250 г.', '500 г.', '950 г.'], 'weight')
+                    ._section
+                      ._img
+                        img(src='./static/img/content/product_01.png')
+                      ._info
+                        +stars('4')
+                        span.star
+                          | 4.0
+                          a(href="#").review
+                            | (32 отзыва)
+                        ._seeds
+                          +stars('5')
+                        ._taste
+                          p
+                            | Кислинка
+                          +circles('7')
+                          p 
+                            | Горчинка
+                          +circles('7')
+                          p
+                            | Насыщенность
+                          +circles('7')
+                    p.head
+                      | Colombia Supremo          
+                    p
+                      | Свежеобжаренный кофе - описание товара, вкус, аромат
+                    ._price
+                      span
+                        | 250 ₽
+                      button(type='button', name='basket').btn_basket
+                        | В корзину
+
+        .swiper_btn
+          button(type='button' name='prev').swiper-prev_btn
+            +icon('arrow')
+          button(type='button' name='next').swiper-next_btn
+            +icon('arrow')
+
+      a(href="#").seeall
+        | Смотреть все
+
+  .working
+    .container
+      .row
+        .col-lg-6.col-md-12
+          .left
+            ._img
+              img(src='./static/img/content/cup.png')
+        .col-lg-6.col-md-12
+          .right
+            h2 Почему стоит работать именно с нами?
+            ._section
+              ._img
+                img(src='./static/img/content/work01.png')
+              ._text
+                p Всегда свежая обжарка
+                p Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка
+            ._section
+              ._img
+                img(src='./static/img/content/work02.png')
+              ._text
+                p Лучшие цены на продукцию
+                p Благодаря крупным объемам производства мы даем лучшие цены на нашу продукцию
+            ._section
+              ._img
+                img(src='./static/img/content/work03.png')
+              ._text
+                p Консультации 24/7
+                p Наши специалисты готовы всегда помочь и подсказать вам с выбором кофе или другой продукции.
+      .down
+        h2 Как мы обжариваем наш кофе:
+
+        p Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции. 
+
+        p Кофе поставляется в контейнерах напрямую с плантаций по всему миру. Компания имеет долгосрочные контракты по поставке продукции. Каждая партия проходит строгий контроль на заводе для проверки зерна. Зеленое зерно обжаривается, проходит процесс дегазации и тут же отправляется клиентам. Наши обжарщики прошли обучение в России и за рубежом. У нас свой подход к каждой партии зерна. 
+
+        p Мы раскрываем вкус каждого сорта кофе.
+        ._btn
+          button(type='button', name='catalog').btn_catalog
+            | Перейти в каталог
+
+  .news
+    .container
+      .news__head
+        h2 Новости компании
+        a(href="#").seeall
+          | Читать все
+      .row
+        .col-lg-7.pb-4
+          .row 
+            .col-lg-4
+              .news__img
+                img(src='./static/img/content/coffe_pack.png')
+            .col-lg-8
+              .news__text 
+                p.head Танзанийский кофе. Откуда он взялся и почему мы его так любим?
+                p Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.
+                p Но наш интерес вызван не столько природными красотами, сколько кофе...
+                .news__link
+                  a(href="#") Подробнее
+                  +icon('arrow')
+        .col-lg-5.pb-4
+          .news__text
+            p.head Африканский кофе Кения АА
+            p Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.
+            .news__link
+              a(href="#") Подробнее
+              +icon('arrow')
+        .col-lg-5
+          .news__text
+            p.head Африканский кофе Кения АА
+            p Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.
+            .news__link
+              a(href="#") Подробнее
+              +icon('arrow')
+        .col-lg-7
+          .row 
+            .col-lg-4
+              .news__img
+                img(src='./static/img/content/coffe_pack.png')
+            .col-lg-8
+              .news__text 
+                p.head Танзанийский кофе. Откуда он взялся и почему мы его так любим?
+                p Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.
+                p Но наш интерес вызван не столько природными красотами, сколько кофе...
+                .news__link
+                  a(href="#") Подробнее
+                  +icon('arrow')
+
+  .instagram
+    .container
+      .instagram__head
+        h2 Мы в Instagram
+        img(src='./static/img/content/instagram.png')
+      .instagram__main
+        .row
+          .col-lg-4
+            .img 
+              img(src='./static/img/content/iphone.png')
+          .col-lg-8
+            .instagram__slider
+              .swiper-container
+                .swiper-wrapper
+                  - for (var i=0; i<10; i++)
+                    .swiper-slide
+                      .slide
+                        ._img
+                          img(src='./static/img/content/coffe_pack.png')
+
+  .subscribe
+    .container
+      h2 Подписка на новости и рассылку
+      p Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.
+      form(action="/")
+        label
+          .subscribe__email
+            input(type="email" name="email" placeholder="Ваш email")
+            button(type="submit" name="submit").btn_subscribe
+              | Подписаться
+      span Нажимая на кнопку “Подписаться”, вы принимаете правила
+        a(href="#") пользовательского соглашения

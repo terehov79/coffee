@@ -1,0 +1,30 @@
+.nav
+  display flex
+  justify-content center
+  align-items center
+  &__item:not(:last-child)
+    padding-right px(100)
+    @media $lg-and-smaller
+      padding-right 0
+  &__link
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: black
+  @media $lg-and-smaller
+    padding: 170px 0 80px
+    flex-direction column
+    justify-content flex-start
+    align-items flex-start
+    &__item
+      padding 40px 0
+      @media $lg-and-smaller
+        padding 20px 0
+    &__link
+      font-size: 32px;
+      line-height: 38px;
+      color: #181818;
+  @media $sm-and-smaller
+    padding 50px 0 50px

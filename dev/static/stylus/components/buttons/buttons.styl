@@ -1,0 +1,72 @@
+.btn_catalog
+	width: 400px;
+	height: 80px;
+	display flex
+	justify-content center
+	align-items center
+	background: #F9B300;
+	border-radius: 5px;
+	border none
+	cursor pointer
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	color: #FFFFFF;
+
+.btn_buy
+	@extend .btn_catalog
+	width: 329px;
+	height: 60px;
+	font-size: 25px;
+	line-height: 30px;
+
+.btn_basket
+	@extend .btn_catalog
+	width: 178px;
+	height: 48px;
+	font-size: 25px;
+	line-height: 30px;
+	font-size: 18px;
+	line-height: 22px;
+
+.swiper_btn
+	width: 100%
+	height 70px
+	
+.swiper-prev_btn, .swiper-next_btn
+	size(70px)
+	background: #F9B300;
+	border-radius: 50%;
+	border none
+	content ""
+	position relative
+	top -400px
+	left -100px 
+	display flex
+	justify-content center
+	align-items center
+	transition ()
+	svg
+		fill white
+		transform: rotate(-180deg)
+
+.swiper-next_btn
+	top -470px
+	left 1270px
+	svg
+		transform: rotate(0)
+
+.swiper-next_btn.swiper-button-disabled, .swiper-prev_btn.swiper-button-disabled
+	opacity 0.5
+	transition ()
+
+.btn_subscribe
+	@extend .btn_catalog
+	width: 260px;
+	height: 80px;
+	font-size: 25px;
+	line-height: 30px;
+	border-radius 40px
+	

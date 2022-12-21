@@ -1,0 +1,454 @@
+.welcome
+	width 100%
+	padding-top 150px
+	&--wrap
+		width 100%
+	&__hero
+		width 100%
+		position: relative
+		z-index -10
+		&::before
+			size(1902px, 1913px)
+			content ""
+			position absolute
+			display block
+			background-image url('../img/content/background-right.png')
+			background-size: contain
+			background-repeat no-repeat
+			background-position 0 0
+			top -130%
+			left 42%
+		&::after
+			size(1333px, 1472px)
+			content ""
+			position absolute			
+			top 120%
+			left -50%
+			display block
+			background-image url('../img/content/background-left.png')
+			background-size: contain
+			background-repeat no-repeat
+			background-position 0 0
+		h1
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 900;
+			font-size: 80px;
+			line-height: 100px;
+			color: #000000;
+			padding-bottom 60px
+		p.title_p
+			padding-bottom 30px
+		b
+			margin-left 8px
+	&__btn
+		padding-top 50px
+
+.catalog
+	width 100%
+	h2.title_h2
+		padding 276px 0 83px
+	.card
+		size(100%, auto)
+		padding 20px
+		background: #FFF
+		box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+		border-radius: 20px;
+		display flex
+		flex-direction: column
+		justify-content space-between
+		align-items center
+		transition: transition
+		&:hover
+			transform: scale(1.05) translateY(-10px)
+			.card__btn
+				opacity 1				
+		&__pic
+			size(100%, 278px)
+			display flex
+			justify-content center
+			align-items center
+			margin-bottom 40px
+		p
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 25px;
+			line-height: 30px;
+			text-align: center;
+			color: #000000;
+		&__btn
+			padding-bottom: 25px
+			transition transition
+			opacity 0
+
+.products
+	width 100%
+	h2
+		@extend .title_h2
+		padding 90px 0 50px
+		text-align right
+	p.title_p
+		text-align right
+	.slider
+		width 100%
+		padding 0 100px 0 280px
+    .slide
+			padding-top 100px
+			.card
+				width: 400px;
+				height: auto
+				padding 21px 37px 50px 38px
+				background: white
+				box-shadow: 0px 0px 20px rgba(146, 146, 146, 0.25);
+				border-radius: 20px;
+				border 1px solid lightgray
+				display flex
+				flex-direction: column
+				justify-content flex-start
+				align-items flex-start
+				.select-gl.weight
+					width 100%
+					display flex
+					justify-content flex-end
+				p.head
+					padding 0
+					font-family: 'Gilroy';
+					font-style: normal;
+					font-weight: 900;
+					font-size: 25px;
+					line-height: 31px;
+					color: #222222;
+				p
+					padding 10px 0 30px
+					font-family: 'Gilroy';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 21px;
+					color: #222222;
+				&__section
+					width 100%
+					display flex
+					justify-content center
+					align-items center
+					padding 40px 0 30px
+					position relative
+					&::before
+						content "%"
+						display flex
+						justify-content center
+						align-items center
+						font-family: 'Gilroy';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 35px;
+						line-height: 42px;
+						color: #000000;
+						position absolute
+						top -90px
+						left 0
+						size(70px)
+						background: #F9B300
+						border-radius: 50%
+					&::after
+						content "Скидки"
+						font-family: 'Gilroy';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 18px;
+						line-height: 22px;
+						color: #F9B300;
+						position absolute
+						top 0
+						left 0
+				&__img
+					width 50%
+				&__info
+					width 50%
+					padding-left 20px
+					span.star
+						margin-top 8px
+						display inline-block
+						font-family: 'Gilroy';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 20px;
+						line-height: 24px;
+						color: #222222;
+					a.review
+						margin-left 7px
+						font-family: 'Gilroy';
+						font-style: normal;
+						font-weight: 500;
+						font-size: 14px;
+						line-height: 16px;
+						color: #5B5B5B;
+				&__seeds
+					padding 20px 0 10px
+					.star-rating
+						background-image: url(../img/svg/seed-empty.svg) !important;
+					.star-rating .star-value
+						background-image: url(../img/svg/seed.svg) !important;
+				&__taste
+					width 100%
+					position relative
+					.star-rating
+						background-image: url(../img/svg/circle-empty.svg) !important;
+					.star-rating .star-value
+						background-image: url(../img/svg/circle.svg) !important;
+					p
+						padding: 10px 0
+						font-family: 'Gilroy';
+						font-style: normal;
+						font-weight: 500;
+						font-size: 18px;
+						line-height: 21px;
+						color: #222222;
+				&__price
+					width 100%
+					display flex
+					justify-content space-between
+					align-items center
+					span
+						font-family: 'Gilroy';
+						font-style: normal;
+						font-weight: 900;
+						font-size: 35px;
+						line-height: 44px;
+						color: #222222;
+						position relative
+						&::before
+							content "350 ₽"
+							font-family: 'Gilroy';
+							font-style: normal;
+							font-weight: 500;
+							font-size: 25px;
+							line-height: 29px;
+							text-align: center;
+							text-decoration-line: line-through;
+							color: #C6C6C6;
+							position absolute
+							top -50%
+							left 0
+
+	a.seeall
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #000000;
+		text-decoration-line: underline;
+		display flex
+		justify-content flex-end
+		align-items center
+		padding-top 58px
+
+.working
+	max-width: 1920px
+	min-height: 2009px
+	padding-top 117px
+	background-image url('../img/content/background01.png')
+	background-size: contain
+	background-repeat no-repeat
+	background-position center center
+	margin 0 auto
+	.right
+		width: 100%
+		padding 30px 0 0
+		h2
+			@extend .title_h2
+			max-width 585px
+			padding-bottom 20px
+		&__section
+			width: 100%
+			padding-top 60px
+			display flex
+			justify-content flex-start
+			align-items flex-start
+		&__text
+			display flex
+			flex-direction: column
+			padding-left 50px
+			p
+				@extend .title_p
+				max-width: 600px
+			p:first-child
+				padding-bottom 20px
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 36px;
+	.left
+		&__img
+			padding 150px 0 0
+	.down
+		padding 240px 0 0
+		h2
+			@extend .title_h2
+			color white
+			padding-bottom 100px
+		p 
+			@extend .title_p
+			color white
+			padding-bottom 30px		
+			max-width 1246px
+		&__btn
+			padding-top 70px
+
+.news
+	min-height: 1340px
+	max-width: 1920px
+	background-image url('../img/content/background02.png')
+	background-size: contain
+	background-repeat no-repeat
+	background-position 0 0
+	margin 0 auto
+	&__head
+		width 100%
+		padding-bottom 50px
+		display flex
+		justify-content space-between
+		align-items center
+		h2
+			@extend .title_h2
+			padding-top 36px
+	&__text
+		width: 100%
+		height 400px
+		display flex
+		justify-content space-between
+		align-items flex-start
+		flex-direction: column
+		padding: 40px 80px
+		background-color #fff
+		box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+		border-radius: 20px
+		p.head
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 25px;
+			line-height: 130%;
+			color: #000000;
+		p
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 130%;
+	&__link
+		a
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 24px;
+			color: #F9B300;
+		svg
+			size(50px)
+			fill #F9B300;
+	&__img
+		width: 336px;
+		height: 400px;
+		img
+			width 100%
+			height: 100%
+			position relative
+			z-index 5
+
+.instagram
+	width 100%
+	margin-top -270px
+	
+	&__head
+		width: 100%
+		display flex
+		justify-content flex-start
+		align-items center
+		padding-bottom 50px
+		position relative
+		&::before
+			size(1904px, 500px)
+			content ""
+			position absolute
+			background-color #F9B300;
+			background-repeat no-repeat
+			background-position 0 0
+			top 270px
+			left -143px
+		h2
+			@extend .title_h2
+			padding-right 50px
+		img
+			size(86px)
+	
+	&__main
+		width 100%
+		min-height: 1000px
+		.img
+			width 100%
+			height 300px
+			position relative
+			&::before
+				size(650px)
+				content ""
+				position absolute
+				background-image url('../img/content/iphone.png')
+				background-size: contain
+				background-repeat no-repeat
+				background-position 0 0
+				top 50%
+				left 30%
+
+	&__slider
+		width 100%
+		min-height 1000px
+
+.subscribe
+	width 100%
+	min-height 500px
+	padding-bottom 150px
+	position relative
+	&::before
+		size(916px, 733px)
+		content ""
+		position absolute
+		background-image url('../img/content/cup02.png')
+		background-repeat no-repeat
+		top -300px
+		left 55%
+	h2
+		@extend .title_h2
+	p
+		@extend .title_p
+		max-width: 790px
+		padding: 60px 0
+	&__email
+		width: 100%
+		display flex
+		justify-content flex-start
+		align-items center
+	input
+		size(840px, 80px)
+		border-radius 40px
+		background-color #F3F3F3;
+		border none
+		padding-left 60px
+		&::placeholder
+			color #C9C9C9
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 25px;
+			line-height: 130%;
+	span
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 130%;
+		color: #5B5B5B;
+		a 
+			color #F9B300;
+			margin-left 10px

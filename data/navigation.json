@@ -1,0 +1,7 @@
+{
+  "navPages": {
+    "Каталог товаров" : "catalog.html",
+    "Блог" : "blog.html",
+    "Контакты" : "contacts.html"
+  }
+}

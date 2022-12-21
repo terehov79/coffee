@@ -1,0 +1,11 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Главная страница'
+  - var pageClass = 'index-page'
+
+block content
+  - var welcomeInfo = ['WELCOME Ozzie84 in new project!', 'Nice day))']
+
+  include ../custom/index-home/welcome
+block script
